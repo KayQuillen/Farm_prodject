@@ -1,0 +1,22 @@
+
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type of:</strong>
+  <%= @inventory.type_of %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @inventory.amount %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @inventory.expiration %>
+</p>
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>

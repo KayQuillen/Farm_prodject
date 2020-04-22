@@ -1,0 +1,52 @@
+<%= form_with(model: cattle, local: true) do |form| %>
+  <% if cattle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cattle.errors.count, "error") %> prohibited this cattle from being saved:</h2>
+
+      <ul>
+      <% cattle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tag %>
+    <%= form.text_field :tag, id: :cattle_tag %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color, id: :cattle_color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :cattle_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heffer %>
+    <%= form.text_field :heffer, id: :cattle_heffer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :DOB %>
+    <%= form.text_field :dob, id: :cattle_dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descendant_of %>
+    <%= form.text_field :descendant_of, id: :cattle_descendant_of %>
+  </div>
+
+   <div class="field">
+    <%= form.label :immunization %>
+    <%= form.text_field :immunization, id: :cattle_immunization %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

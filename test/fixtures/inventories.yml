@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_of: MyString
+  amount: 1
+  expiration: 2020-04-14 15:56:40
+
+two:
+  type_of: MyString
+  amount: 1
+  expiration: 2020-04-14 15:56:40

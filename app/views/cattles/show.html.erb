@@ -1,0 +1,42 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @cattle.tag %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @cattle.color %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @cattle.gender %>
+</p>
+
+<p>
+  <strong>Heffer:</strong>
+  <%= @cattle.heffer %>
+</p>
+
+<p>
+  <strong>DOB:</strong>
+  <%= @cattle.dob %>
+</p>
+
+<p>
+  <strong>Descendant of:</strong>
+  <%= @cattle.descendant_of %>
+</p>
+
+<p>
+  <strong>Immunization:</strong>
+  <%= @cattle.immunization %>
+</p>
+
+<%= link_to 'Edit', edit_cattle_path(@cattle) %> |
+<%= link_to 'Back', cattles_path %>
+
